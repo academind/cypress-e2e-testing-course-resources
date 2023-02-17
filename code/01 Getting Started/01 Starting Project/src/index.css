@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --gray-100: #f9f9f9;
+  --gray-200: #d8d8d8;
+  --gray-300: #c4c1c1;
+  --gray-400: #aeadad;
+  --gray-500: #818080;
+  --gray-600: #6c6c6c;
+  --gray-700: #5c5b5b;
+  --gray-800: #403f3f;
+  --gray-900: #2c2b2b;
+  --gray-1000: #1a1a1a;
+
+  --indigo-100: #e8e9ff;
+  --indigo-200: #c7c9ff;
+  --indigo-300: #a6a9ff;
+  --indigo-400: #858aff;
+  --indigo-500: #646cff;
+  --indigo-600: #535bf2;
+  --indigo-700: #424ae6;
+  --indigo-800: #3239da;
+  --indigo-900: #2228ce;
+
+  --pink-100: #ffe8f0;
+  --pink-200: #ffcfe3;
+  --pink-300: #ffb5d6;
+  --pink-400: #ff9cc9;
+  --pink-500: #ff82bc;
+  --pink-600: #f26ba2;
+  --pink-700: #e65f88;
+  --pink-800: #da537e;
+  --pink-900: #ce4764;
+
+  color-scheme: light dark;
+  color: var(--gray-100);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(180deg, var(--gray-1000), var(--gray-900));
+}
+
+h1 {
+  margin: 6rem 0;
+  font-size: 3.2em;
+  line-height: 1.1;
+  background: linear-gradient(90deg, var(--indigo-600), var(--pink-800));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

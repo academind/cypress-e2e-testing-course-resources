@@ -1,0 +1,26 @@
+.task {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--color-gray-600);
+  background-color: var(--color-gray-700);
+  border-radius: 4px;
+}
+
+.task-category {
+  font-size: 1.25rem;
+}
+
+.task h2 {
+  margin: 0;
+  color: var(--color-gray-300);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.task p {
+  margin: 0;
+  color: var(--color-gray-200);
+}

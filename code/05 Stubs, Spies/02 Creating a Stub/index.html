@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cypress Stubs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>SnapLocation</h1>
+      <form>
+        <p>
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" data-cy="name-input" />
+        </p>
+        <p class="actions" data-cy="actions">
+          <button id="get-location" type="button" class="active" data-cy="get-loc-btn">
+            Get Location
+          </button>
+          <span class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </span>
+          <button type="submit" disabled data-cy="share-loc-btn">Share Link</button>
+        </p>
+        <p id="error"></p>
+      </form>
+    </main>
+    <aside id="info-message" data-cy="info-message">
+      <p></p>
+    </aside>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

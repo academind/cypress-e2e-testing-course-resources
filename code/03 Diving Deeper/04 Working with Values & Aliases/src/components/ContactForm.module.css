@@ -1,0 +1,69 @@
+.form {
+  max-width: 40rem;
+  margin: 2rem auto;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  color: var(--color-gray-400);
+  font-weight: 600;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-gray-500);
+  border-radius: 0.25rem;
+  background-color: var(--color-gray-800);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.row p {
+  width: 100%;
+}
+
+.actions {
+  text-align: center;
+}
+
+.form button {
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--color-primary-800);
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: var(--color-primary-700);
+}
+
+.form button:disabled {
+  background-color: var(--color-gray-700);
+  cursor: not-allowed;
+}
+
+.invalid label {
+  color: var(--color-red-300);
+}
+
+.invalid input,
+.invalid textarea {
+  border-color: var(--color-red-300);
+}

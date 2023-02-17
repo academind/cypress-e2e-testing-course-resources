@@ -1,0 +1,12 @@
+.header {
+  max-width: 60rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul {
+  display: flex;
+  gap: 1rem;
+}

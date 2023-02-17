@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+h1 {
+  text-align: center;
+  color: #8892a4;
+}
+
+main {
+  max-width: 42rem;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+form p {
+  margin: 0 0 0.5rem 0;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+  padding: 2rem 5rem;
+  background-color: #1a1919;
+  border-radius: 8px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #8f8f8f;
+  font-weight: 600;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.25rem;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  color: #b7c4fe;
+}
+
+.icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.actions svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  stroke: #393939;
+  transition: all 0.3s ease-out;
+}
+
+.actions svg.active {
+  stroke: #4969f9;
+}
+
+.actions button {
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-out;
+}
+
+.actions button.active {
+  background-color: #4969f9;
+  color: #ffffff;
+}
+
+.actions button:hover {
+  background-color: #3a56d1;
+}
+
+.actions button.active:disabled {
+  background-color: #283365;
+}
+
+.actions button:disabled {
+  background-color: #1e1c1c;
+  color: #595656;
+  cursor: not-allowed;
+}
+
+.loader {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+form #error {
+  color: #f6424b;
+  font-weight: 600;
+}
+
+#info-message {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  background-color: #b6a8fd;
+  color: #0c153e;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#info-message.visible {
+  animation: slide-in 0.2s ease-out forwards;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-50%) translateY(-100%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}

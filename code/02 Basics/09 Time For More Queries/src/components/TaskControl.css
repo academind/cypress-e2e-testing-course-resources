@@ -1,0 +1,28 @@
+#task-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#task-control button {
+  font: inherit;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: var(--color-gray-800);
+  color: var(--color-gray-100);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#task-control button:hover {
+  background-color: var(--color-gray-700);
+}
+
+#task-control select {
+  font: inherit;
+  padding: 0.5rem;
+  background-color: var(--color-gray-400);
+  color: var(--color-gray-900);
+  border-radius: 4px;
+}

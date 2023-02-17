@@ -1,0 +1,13 @@
+.task-list {
+  list-style: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.no-tasks {
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-gray-400);
+  font-size: 2rem;
+  margin: 3rem auto;
+}

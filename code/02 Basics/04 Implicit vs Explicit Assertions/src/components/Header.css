@@ -1,0 +1,12 @@
+.main-header {
+  margin: 3rem auto;
+  text-align: center;
+  color: var(--color-gray-400);
+}
+
+.main-header img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: contain;
+  transform: rotateZ(10deg);
+}

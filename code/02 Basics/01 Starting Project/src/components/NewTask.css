@@ -1,0 +1,62 @@
+#new-task-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+#new-task-form input,
+#new-task-form textarea {
+  font: inherit;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-gray-300);
+  background-color: var(--color-gray-400);
+  color: var(--color-gray-900);
+  border-radius: 4px;
+}
+
+#new-task-form select {
+  font: inherit;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-gray-300);
+  background-color: var(--color-gray-400);
+  color: var(--color-gray-900);
+  border-radius: 4px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+#new-task-form button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: var(--color-primary-500);
+  color: var(--color-gray-100);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#new-task-form button:hover {
+  background-color: var(--color-primary-600);
+}
+
+#new-task-form button[type="button"] {
+  background-color: transparent;
+  color: var(--color-gray-200);
+}
+
+#new-task-form button[type="button"]:hover {
+  background-color: var(--color-gray-700);
+}
+
+
+
+.error-message {
+  color: var(--color-primary-300);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
